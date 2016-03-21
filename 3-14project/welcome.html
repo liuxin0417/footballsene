@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	    <meta content="telephone=no" name="format-detection" />
+	    <meta http-equiv="Content-Type"kaungdnu content="text/html; charset=utf-8">
+	    
+	  	<link rel="stylesheet" type="text/css" href="js/swiper-3.3.1.min.css">
+		<title>欢迎页swiper</title>
+		<style>
+			body,html{
+				padding:0;
+				margin:0;
+				height:100%;
+			}
+			.swiper-container{
+				height:100%;
+			}
+			.swiper-wrapper{
+				height:300%;
+			}
+			.swiper-slide{
+				height:33.333%;
+				background:green;
+			}
+			.slide01{
+				background:url(img/foorbal01.jpg);
+				background-size:100% 100%;
+			}
+			.slide02{
+				background:url(img/ball02.jpg);
+				background-size:100% 100%;
+			}
+			.slide03{
+				background:url(img/ball05.jpg);
+				background-size:100% 100%;
+			}
+			.slide04{
+				background:url(img/ball04.jpg);
+				background-size:100% 100%;
+			}
+			.slide05{
+				position:relative;
+				background:url(img/ball03.jpg);
+				background-size:100% 100%;
+			}
+			.we-btn{
+				position:absolute;
+				width:50%;
+				top:80%;
+				left:25%;
+				height:50px;
+				border:none;
+				border-radius:5px;
+				background:red;
+				color:#fff;
+				font-size:16px;
+				text-align:center;
+				line-height:50px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slide01">
+			
+			</div>
+			<div class="swiper-slide slide02">Slide 2</div>
+			<div class="swiper-slide slide03">Slide 3</div>
+			<div class="swiper-slide slide04">Slide 4</div>
+			<div class="swiper-slide slide05">
+				<a href="index.html"><button class="we-btn">进入我的足球圈子</button></a>
+			</div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+
+		<!-- 如果需要导航按钮
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div> -->
+
+		<!-- 如果需要滚动条 -->
+		<<!-- div class="swiper-scrollbar"></div> -->
+	</div>
+	</body>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>	
+		<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+		<script type="text/javascript" src="js/swiper.animate1.0.2.min.js" ></script>
+	<script> 
+	window.onload=function(){
+
+
+		  var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'vertical',
+		    loop: true,
+		    
+		    // 如果需要分页器
+		    pagination: '.swiper-pagination',
+		  
+		    // 如果需要滚动条
+		   /* scrollbar: '.swiper-scrollbar',*/
+		  }) 
+	} 	         
+  </script>
+</html>

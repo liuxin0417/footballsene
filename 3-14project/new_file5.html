@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Content-Type"kaungdnu content="text/html; charset=utf-8">
+    <title>关注</title>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+     <script type="text/javascript" src="js/iscroll.js"></script>
+    <link rel="stylesheet" href="css/com.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header_d">
+		<span class="header_d1">热点</span>
+		<span class="header_d2">关注</span>
+		</div>
+	</header>
+	<div class="main" id="wrapper2">
+	<div>
+		<div class="main_son main_son1">
+			<div class="son_header">
+				<div class="sup">
+					<img src="img/ddg-2.jpg">
+				</div>
+				<div class="son_intro">
+					<span class="son_name">
+						我叫小萌
+					</span>
+					<span class="son_shuoshuo">
+						我是小萌我怕谁，哈哈哈哈
+					</span>
+				</div>
+				<div class="son_zan">
+					<span class="zan_number">33333333</span>
+					<img src="img/dgg-3.png">
+				</div>
+			</div>
+			<img src="img/07user.jpg">
+		</div>
+		<div class="main_son">
+			<div class="son_header">
+				<div class="sup">
+					<img src="img/ddg-2.jpg">
+				</div>
+				<div class="son_intro">
+					<span class="son_name">
+						我叫小萌
+					</span>
+					<span class="son_shuoshuo">
+						我是小萌我怕谁，哈哈哈哈
+					</span>
+				</div>
+				<div class="son_zan">
+					<span class="zan_number">33333333</span>
+					<img src="img/dgg-3.png">
+				</div>
+			</div>
+			<img src="img/07user.jpg">
+		</div>
+		<div class="main_son">
+			<div class="son_header">
+				<div class="sup">
+					<img src="img/ddg-2.jpg">
+				</div>
+				<div class="son_intro">
+					<span class="son_name">
+						我叫小萌
+					</span>
+					<span class="son_shuoshuo">
+						我是小萌我怕谁，哈哈哈哈
+					</span>
+				</div>
+				<div class="son_zan">
+					<span class="zan_number">33333333</span>
+					<img src="img/dgg-3.png">
+				</div>
+			</div>
+			<img src="img/07user.jpg">
+		</div>
+	</div>	
+	</div>
+	<footer class="footer">
+		<span id="fotspan1" class="fotspan1">首页</span>
+		<span class="fotspan2">发现</span>
+		<span class="fotspan3">我的</span>
+		<span class="fotspan4">退出</span>
+	</footer>
+	<div class="circle"></div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+		var wHeight=$(window).height()
+			theight=$(".header").height()
+			
+			fheight=$(".footer").height()
+				
+		var scroll=new iScroll("wrapper2",{
+			/*hScrollbar:false,
+			vScrollbar:false*/
+
+		});
+		
+		$("#wrapper2").height(wHeight-theight-fheight)
+        
+		scroll.refresh()
+		}
+	</script>
+</html>
+ 
